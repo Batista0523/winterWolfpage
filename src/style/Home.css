@@ -1,6 +1,6 @@
 .hero-hvac {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -57,4 +57,100 @@
   max-width: 700px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .hero-hvac {
+    height: 90vh; 
+    padding-top: 3rem;
+  }
+
+  .hero-bg {
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hero-overlay {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero-bg {
+    background-image: url("/winterHero-mobile.png");
+  }
+}
+.hvac-card {
+  transition: transform 0.3s ease;
+}
+.hvac-service-card {
+  background: linear-gradient(to top, #f0f8ff, #ffffff);
+  border-radius: 20px;
+  transition: 0.4s ease;
+}
+.hvac-service-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+}
+.hvac-icon {
+  color: #0d6efd;
+}
+.process-timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.process-step {
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+}
+.process-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #004f91;
+  color: white;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.trust-badge {
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  transition: 0.3s ease;
+}
+.trust-badge:hover {
+  background: #eafaf1;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.1);
+}
+.bg-air-quality {
+  background: linear-gradient(120deg, #0077b6, #00b4d8);
+  position: relative;
+  overflow: hidden;
+}
+
+.air-quality-card {
+  max-width: 700px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.air-quality-img {
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .air-quality-img {
+    max-height: 280px;
+  }
+
+  .air-quality-card {
+    padding: 1rem;
+  }
 }
